@@ -2,7 +2,7 @@
  //   agent any
  //   environment{
  //       DOCKERHUB_CREDENCIALS = credentials ('dockerhub')
- //       RepoDockerHub = 'christianscha'
+ //       RepoDockerHub = 'jvalberca'
 //        NameContainer = 'pokedex-flask'
 //    }
 
@@ -11,7 +11,7 @@ pipeline {
         stages {
             stage('Build'){
                 steps{
-                    sh "docker build -t zdenkoo98/pokedex-flask:${env.BUILD_NUMBER} ."
+                    sh "docker build -t jvalberca/pokedex-flask:${env.BUILD_NUMBER} ."
                 }
             }
         }
