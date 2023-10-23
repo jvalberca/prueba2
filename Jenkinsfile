@@ -11,7 +11,7 @@ pipeline {
         stages {
             stage('Build'){
                 steps{
-                    sh "docker build -t jvalberca/pokedex-flask:${env.BUILD_NUMBER} ."
+                    sh "docker build -t jvalberca/prueba2:${env.BUILD_NUMBER} ."
                 }
             }
         }
